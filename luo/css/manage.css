@@ -1,0 +1,338 @@
+html,body
+{
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-color:#FAFAFA;
+}
+
+#header
+{
+    height:60px;
+    background-color: #233645;
+}
+
+.header-center
+{
+    position:absolute;
+    left: 50%;
+    margin-left: -590px;
+    width:1180px;
+}
+
+.tit
+{
+    top:50%;
+    margin-top:20px;
+    margin-left:20px;
+    font-size: 20px;
+    height:40px;
+    float:left;
+    color: #FFFFFF;
+}
+.exit
+{
+    color: #FFFFFF;
+    font-size: 15px;
+    float:right;
+    top:50%;
+    margin-top:20px;;
+    height:40px;
+    /*
+    float:right;右浮动
+    脱离文档流并且向右移动，直到它的右边缘碰到包含框的右边缘
+    */
+}
+
+#middle
+{
+    height:172px;
+    background-color:#F3F3F3;
+}
+.mid-center
+{
+    position:absolute;
+    left: 50%;
+    margin-left: -590px;
+    height:172px;
+    width:1180px;
+    background:#F3F3F3;
+}
+
+.mid-center  a
+{
+    float:left;
+    color:#46B5F6;
+    padding-left:50px;
+}
+
+.mid
+{
+    display:block;
+}
+
+#main
+{
+    z-index: 1;
+    position:absolute;
+    top:200px;
+    left: 50%;
+    margin-left: -590px;
+    width:1180px;
+    background: #FFFFFF;
+}
+
+
+.main-head
+{
+    margin-top:50px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#main:before , #main:after
+{
+    content:"";
+    width: 10px;
+    height: 32px;
+    top: 0;
+    position: absolute;
+    background: url("../imgs/manage/tril2.png");
+}
+
+#main:before
+{
+    left:-10px;
+}
+#main:after
+{
+    right:-10px;
+    background-position: 0 -32px;
+}
+
+.btn
+{
+    border:solid  1px #CCCCCC;
+    width:40px;
+    height: 36px;
+    position: relative;
+}
+.btn-a
+{
+    background-image:url(../imgs/manage/btn_a.png) ;
+}
+.btn-m
+{
+    background-image:url(../imgs/manage/btn_m.png) ;
+    margin-left:-1px;
+}
+.btn:active
+{
+    z-index: 10;
+}
+
+.search
+{
+    float:right;
+}
+.search img
+{
+    float:right;
+    height:38px;
+}
+
+.txt-search
+{
+    width:240px;
+    height:32px;
+}
+
+.main-body
+{
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+    bottom:10px;
+}
+
+thead tr th a,tbody tr td a
+{
+    margin-right:10px;
+}
+
+.main-body  tr
+{
+    height:40px;
+}
+
+.main-body table
+{
+    border-left:1px solid #E5E6E7;
+    border-top:1px solid #E5E6E7;
+}
+
+.main-body table th
+{
+    text-align: left;
+    padding-left:10px;
+    border-right:1px solid #E5E6E7;
+    border-bottom:2px solid #E5E6E7;
+}
+
+.main-body table td
+{
+    padding-left:10px;
+    border-right:1px solid #E5E6E7;
+    border-bottom:1px solid #E5E6E7;
+}
+
+.main-body  td:first-child
+{
+    color:#116CB3;
+}
+
+#mid-bg
+{
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    height:100%;  /*  想让一个元素的百分比高度height:100%起作用，需要给这个元素的所有父元素的高度设定一个有效值 */
+    width:100%;
+    opacity: 0.4;
+    background: #000;
+}
+
+/*  属于其父元素的第2n个子元素的每个tr的背景色
+    2n可写成even
+    2n+1可写成odd
+*/
+tr:nth-child(2n) ,th
+{
+    background: #F0F0F0;
+}
+
+/*多选框*/
+.checkbox
+{
+    display: inline-block;
+    /*vertical-align: top;*/
+    width:13px;
+    height:13px;
+    background: url("../imgs/manage/checkbox.png");
+    cursor: pointer;
+}
+.checkbox:hover
+{
+    background-position: 0 -13px;
+}
+.checkbox.checked , .checkbox.checked:hover
+{
+    background-position: 0 -26px;
+}
+
+/*  单选框 */
+.radio
+{
+    display: inline-block;
+    vertical-align: top;
+    width:20px;
+    height:20px;
+    background: url("../imgs/manage/radio.png");
+    cursor: pointer;
+}
+.radio:hover
+{
+    background-position: 0 -20px;
+}
+.radio.checked , .radio.checked:hover
+{
+    background-position: 0 -40px;
+}
+
+
+#edit
+{
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    width: 1000px;
+    height:630px;
+    margin-left: -500px;
+}
+
+.edit-header
+{
+    height:50px;
+    background: #233645;
+}
+
+.edit-header  button
+{
+    float:right;
+    border:0;
+    width: 77px;
+    height: 48px;
+    background-image: url(../imgs/manage/close.png);
+}
+
+.edit-body
+{
+    height:580px;
+    background: #FFF;
+}
+
+.add
+{
+    width: 36px;
+    height: 36px;
+    background-image: url(../imgs/manage/add.png);
+    border:0;
+    float:right;
+    position:absolute;
+    margin-right:30px;
+}
+
+.row
+{
+    padding-top:20px;
+    height:40px;
+}
+
+.row  input
+{
+    width: 400px;
+    height: 30px;
+}
+
+
+.row>.key
+{
+    text-align: right;
+    float:left;
+    width: 260px;
+}
+
+.row>.val
+{
+    margin-left:300px;
+}
+.row>.key.must:after
+{
+    content: "*";
+    color: #EC0000;
+}
+
+.val  a
+{
+    margin-right:10px;
+}
+
+.save
+{
+    width: 83px;
+    height: 34px;
+    background-image: url(../imgs/manage/save.png);
+    border:0;
+    margin-left:860px;
+    margin-top:160px;
+}

@@ -1,0 +1,81 @@
+body
+{
+    height:100%;
+    margin:0px;    /* 消除body标签默认边距*/
+    padding:0px;
+}
+html
+{
+    height:100%;
+}
+
+.all
+{
+    background-image:url("../imgs/login/login_bg.png");
+    height:100%;
+}
+
+.form
+{
+    text-align:center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -214px;
+    margin-top: -233px;
+    height:466px;
+    width:428px;
+    background-color:white;
+}
+
+.form input
+{
+    width:280px;
+    height:40px;
+    border-radius: 5px;
+    border: solid 1px #E6E6E6;
+    margin-top:20px; /* 设置文本框的间距 */
+    padding-left:20px;  /* 改变文本框输入光标的位置*/
+}
+
+.form img
+{
+    padding:20px  30px  20px  30px;
+}
+
+.btn
+{
+    box-sizing: content-box;/*  button 的 padding-left  样式无效*/
+    background-color: #618091;
+    color:white;
+    font-size:16px;
+}
+
+.bottom
+{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    margin-left: -265px;
+    margin-top: -8px;
+    height:16px;
+}
+
+.error
+{
+    background-color: #F2DEDE;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+

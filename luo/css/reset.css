@@ -1,0 +1,29 @@
+/* css 默认样式重置 */
+
+html,body{height: 100%;}
+
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}
+   
+ol,li,ul{margin:0; padding:0;list-style: none;}
+
+button{outline:none;border:none;padding:0;cursor:pointer;}
+
+a{cursor:pointer;text-decoration: none;	color: unset;}
+
+a:focus {outline: none;} 
+
+input::-ms-clear, ::-ms-reveal{	display: none;}
+
+textarea{resize: none;}
+
+table{width: 100%;border-collapse: collapse;}
+
+img{border: none;}
+
+html {font-size: 62.5%;}
+
+body{font-family: "Arial","Microsoft YaHei","微软雅黑",sans-serif;font-size: 1.4rem;}
+
+div{box-sizing:border-box;}
+
+input[name='digit']{ime-mode:disabled;}
