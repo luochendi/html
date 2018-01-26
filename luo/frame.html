@@ -5,6 +5,7 @@
     <title>frame</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script  type="text/javascript" src="js/frame.js"></script>
 
 </head>
 <body>
@@ -32,6 +33,33 @@
 <div  id="mid-pbg">
 </div>
 
-<script  type="text/javascript" src="js/frame.js"></script>
+<script>
+    function setBg(){
+        $("#mid-pbg").show();
+    }
+</script>
+
 </body>
 </html>
+
+<!--
+报错：Uncaught DOMException: Blocked a frame with origin "null" from accessing a cross-origin frame.
+原因：跨页面操作涉及域的概念（origin），错误的意思是：未捕获的安全错误：阻止了一个域为null的frame页面访问另一个域为null的页面。
+          代码运行时在本地直接用浏览器打开的，地址栏是file:///的页面，只需改为localhost访问就行。
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

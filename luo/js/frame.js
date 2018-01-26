@@ -2,7 +2,6 @@ $(document).ready(function() {
     $(".child2").hide();
     $("#mid-pbg").hide();
 
-
     $(".user").click(function () {
         $(".child1").hide();
         $(".child2").show();
@@ -19,9 +18,5 @@ $(document).ready(function() {
     $(".exit,.pic-exit").click(function(){
         window.location.href = "login.html";
     });
-
-    //$(".main-head btn").click(function () {
-   //     $("#mid-bg").show();
-  //  });
-
 });
+

@@ -19,6 +19,8 @@ $(function() {
         $("#new").show();
         $("#mid-bg").show();
         $(".ia").show().siblings("img").hide();
+        console.log(window.top);
+        window.top.setBg();
     });
 
     $(".btn-m").click(function(){
