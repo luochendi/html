@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>child1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <style>
+        html,body{margin: 0;padding: 0;width: 100%;height: 100%;}
+    </style>
+</head>
+<body>
+
+<div class="main-head">
+      <span >
+      <button class="btn btn-a"></button><button class="btn btn-m"></button>
+      </span>
+      <span class="search">
+      <input type="text"   class="txt-search" placeholder="Search">
+      <a ><img src="imgs/manage/search.png" alt=""></a>
+      </span>
+</div>
+
+<div  class="main-body">
+    <table border="1" style="border-collapse:collapse; width:1140px;">
+        <thead>
+        <tr >
+            <th style="width:23%;"><a class="checkbox"></a>授权方</th>
+            <th style="width:24%;">产品标题</th>
+            <th style="width:10%;">功能设置</th>
+            <th style="width:35%;">系统管理员</th>
+            <th style="width:8%;">状态</th>
+        </tr>
+        </thead>
+        <tbody id="tbody" >
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript"  src="js/child.js"></script>
+<script type="text/javascript"  src="js/manage_ch1.js"></script>
+</body>
+</html>

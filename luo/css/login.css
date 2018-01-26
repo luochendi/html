@@ -30,12 +30,12 @@ html
 
 .form input
 {
-    width:280px;
+    width:300px;
     height:40px;
     border-radius: 5px;
     border: solid 1px #E6E6E6;
     margin-top:20px; /* 设置文本框的间距 */
-    padding-left:20px;  /* 改变文本框输入光标的位置*/
+    text-indent:20px;  /* 改变文本框输入光标的位置*/
 }
 
 .form img
@@ -48,7 +48,13 @@ html
     box-sizing: content-box;/*  button 的 padding-left  样式无效*/
     background-color: #618091;
     color:white;
+    text-align: center;
     font-size:16px;
+    width:288px;
+    height:40px;
+    border-radius: 5px;
+    border: solid 1px #E6E6E6;
+    margin-top:20px; /* 设置文本框的间距 */
 }
 
 .bottom

@@ -1,8 +1,8 @@
 html,body
 {
     height:100%;
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
     background-color:#FAFAFA;
 }
 
@@ -63,12 +63,13 @@ html,body
 {
     float:left;
     color:#46B5F6;
-    padding-left:50px;
+    padding-left:100px;
 }
 
 .mid
 {
     display:block;
+    padding-top:16px;
 }
 
 #main
@@ -76,6 +77,7 @@ html,body
     z-index: 1;
     position:absolute;
     top:200px;
+    bottom:0;
     left: 50%;
     margin-left: -590px;
     width:1180px;
@@ -126,6 +128,13 @@ html,body
     background-image:url(../imgs/manage/btn_m.png) ;
     margin-left:-1px;
 }
+
+.btn-d
+{
+    background-image:url(../imgs/manage/delete.png) ;
+    margin-left:-1px;
+}
+
 .btn:active
 {
     z-index: 10;
@@ -143,8 +152,9 @@ html,body
 
 .txt-search
 {
-    width:240px;
+    width:220px;
     height:32px;
+    text-indent: 10px;
 }
 
 .main-body
@@ -191,11 +201,12 @@ thead tr th a,tbody tr td a
     color:#116CB3;
 }
 
-#mid-bg
+#mid-bg,#mid-pbg
 {
     position:absolute;
     z-index: 1;
     top:0;
+    bottom:0;
     height:100%;  /*  想让一个元素的百分比高度height:100%起作用，需要给这个元素的所有父元素的高度设定一个有效值 */
     width:100%;
     opacity: 0.4;
@@ -250,7 +261,7 @@ tr:nth-child(2n) ,th
 }
 
 
-#edit
+#new
 {
     position: absolute;
     z-index: 2;
@@ -260,13 +271,13 @@ tr:nth-child(2n) ,th
     margin-left: -500px;
 }
 
-.edit-header
+.new-header
 {
     height:50px;
     background: #233645;
 }
 
-.edit-header  button
+.new-header  button
 {
     float:right;
     border:0;
@@ -275,7 +286,7 @@ tr:nth-child(2n) ,th
     background-image: url(../imgs/manage/close.png);
 }
 
-.edit-body
+.new-body
 {
     height:580px;
     background: #FFF;
@@ -298,11 +309,14 @@ tr:nth-child(2n) ,th
     height:40px;
 }
 
-.row  input
+.row  input,.row select
 {
     width: 400px;
     height: 30px;
     text-indent: 10px;
+    /*  元素的实际宽度=width+border+padding
+   padding不为0，元素的实际宽度会被拉宽
+   text-indent是段落前空位，不影响元素实际宽度;*/
 }
 
 
@@ -337,3 +351,4 @@ tr:nth-child(2n) ,th
     margin-left:860px;
     margin-top:160px;
 }
+

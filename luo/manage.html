@@ -1,39 +1,41 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Manage</title>
-    <link rel="stylesheet" href="css/manage.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+
 </head>
-<body  onload="closeForm()">
+<body>
 <div  id="header">
     <div  class="header-center">
         <img src="imgs/manage/logo.png" alt=""  style="float:left" >
         <span   class="tit">微睿特微点点后台管理系统</span>
-        <img src="imgs/manage/exit.png" alt=""  style="float:right">
+        <img src="imgs/manage/exit.png"  class="pic-exit" style="float:right">
         <span  class="exit">退出设置</span>
     </div>
 </div>
 
 <div  id="middle">
     <div class="mid-center">
-        <a ><span  class="mid"><img src="imgs/manage/sqf.png" alt=""  ></span>授权方管理</a>
-        <a><span  class="mid"><img src="imgs/manage/sqyh.png" alt=""  ></span>授权用户管理</a>
+        <a ><span  class="mid"><img src="imgs/manage/manage2.png"  ></span>授权方管理</a>
+        <a class="user"><span  class="mid"><img src="imgs/manage/user1.png"  ></span>授权用户管理</a>
     </div>
 </div>
 
 <div  id="main">
       <div class="main-head">
       <span >
-      <button class="btn btn-a" onclick="add()"></button><button class="btn btn-m"></button>
+      <button class="btn btn-a"></button><button class="btn btn-m"></button>
       </span>
       <span class="search">
-      <input type="text"   class="txt-search">
+      <input type="text"   class="txt-search" placeholder="Search">
       <a ><img src="imgs/manage/search.png" alt=""></a>
       </span>
     </div>
-    <div  class="main-body" style="overflow-x:hidden;overflow-y:scroll;height:600px;">
+    <div  class="main-body">
         <table border="1" style="border-collapse:collapse; width:1140px;">
             <thead>
             <tr >
@@ -50,14 +52,14 @@
     </div>
 </div>
 
-<div  id="mid_bg">
+<div  id="mid-bg">
 </div>
 
 <div  id="edit">
     <div  class="edit-header">
         <img src="imgs/manage/edit.png" alt="">
-        <button  onclick="closeForm();"></button>
-        <!-- 函数名为close会产生冲突，‘close’方法是已经存在的方法，并没有执行你重写的`close`方法。 -->
+        <button></button>
+
     </div>
     <div  class="edit-body"><br>
             <div  class="row">
@@ -81,51 +83,11 @@
                 <div  class="val"><a  class="radio"></a>激活<a  class="radio checked" style="margin-left:100px;"></a>未激活</div>
             </div>
         <button  class="save"></button>
+     </div>
 </div>
 
+<script type="text/javascript"  src="js/manage_ch1.js"></script>
 
-    <script>
-        $(function() {
-
-            $(".checkbox").click(function () {
-                $(this).toggleClass("checked");
-            });
-
-            loadTr();
-
-            $(".radio").click(function () {
-                if($(this).hasClass("checked"))
-                    return;
-                else
-                {
-                    $(this).addClass("checked").siblings(".radio").removeClass("checked");
-                }
-            });
-
-            function loadTr() {
-                for (var i = 0; i < 10; i++) {
-                    $("#tbody").append("<tr > <td ><a  class=\"checkbox\"></a>江苏微睿特信息科技有限公司</td> <td>微睿微睿特微睿信息巡检管理系统</td><td>巡检、签到</td><td>张某某、李某某、徐某某、成某某、周某某、张某某</td><td>未激活</td></tr>");
-                }
-            }
-        });
-
-        var div1 = document.getElementById("edit");
-        var div2 = document.getElementById("mid_bg");
-        function add()
-        {
-            div1.style.display = "block";
-            div2.style.display = "block";
-        }
-//        $("#btn-close").click(function(){
-//            div1.style.display = "none";
-//            div2.style.display = "none";
-//        });
-        
-        function closeForm() {
-            div1.style.display = "none";
-            div2.style.display = "none";
-        }
-
-    </script>
 </body>
 </html>
+-->
