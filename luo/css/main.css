@@ -88,11 +88,11 @@ html,body
 .mid
 {
     display:block;
-    height: 80px;
-    width: 80px;
 }
 .mid.ma
 {
+    height: 81px;
+    width: 81px;
     background: url("../imgs/manage/manage1.png");
 }
 a.active .mid.ma
@@ -101,6 +101,8 @@ a.active .mid.ma
 }
 .mid.us
 {
+    height: 80px;
+    width: 80px;
     background: url("../imgs/manage/user1.png");
 }
 a.active .mid.us
@@ -312,6 +314,8 @@ tr:nth-child(2n) ,th
     width: 77px;
     height: 48px;
     background-image: url(../imgs/manage/close.png);
+    outline:none;
+    /* 去除点击按钮出现的边框 */
 }
 
 .new-body
