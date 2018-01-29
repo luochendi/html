@@ -34,8 +34,21 @@ html
     height:40px;
     border-radius: 5px;
     border: solid 1px #E6E6E6;
-    margin-top:20px; /* 设置文本框的间距 */
     text-indent:20px;  /* 改变文本框输入光标的位置*/
+}
+
+#account
+{
+    margin-top:20px;
+}
+
+#v-acc,#v-psw
+{
+    height:30px;
+    color:#FF0000;
+    font-size:10px;
+    text-align:left;
+    text-indent:85px;
 }
 
 .form img
@@ -54,7 +67,6 @@ html
     height:40px;
     border-radius: 5px;
     border: solid 1px #E6E6E6;
-    margin-top:20px; /* 设置文本框的间距 */
 }
 
 .bottom
