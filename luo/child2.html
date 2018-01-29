@@ -11,30 +11,35 @@
     </style>
 </head>
 <body>
-<div class="main-head">
+<div class="all"  style="height: 100%;padding-top: 50px;box-sizing: border-box;background: #fff;">
+
+    <div class="main-head">
       <span >
       <button class="btn btn-a"></button><button class="btn btn-m"></button><button class="btn btn-d"></button>
       </span>
-      <span class="search">
+        <span class="search">
       <input type="text"   class="txt-search" placeholder="Search">
       <a ><img src="imgs/manage/search.png" alt=""></a>
       </span>
+    </div>
+    <div  class="main-body">
+        <table border="1" style="border-collapse:collapse; width:1140px;">
+            <thead>
+            <tr >
+                <th style="width:23%;"><a class="checkbox"></a>账号</th>
+                <th style="width:10%;">姓名</th>
+                <th style="width:14%;">联系电话</th>
+                <th style="width:28%;">邮箱</th>
+                <th style="width:25%;">隶属于</th>
+            </tr>
+            </thead>
+            <tbody id="tbody" >
+            </tbody>
+        </table>
+    </div>
+
 </div>
-<div  class="main-body">
-    <table border="1" style="border-collapse:collapse; width:1140px;">
-        <thead>
-        <tr >
-            <th style="width:23%;"><a class="checkbox"></a>账号</th>
-            <th style="width:10%;">姓名</th>
-            <th style="width:14%;">联系电话</th>
-            <th style="width:28%;">邮箱</th>
-            <th style="width:25%;">隶属于</th>
-        </tr>
-        </thead>
-        <tbody id="tbody" >
-        </tbody>
-    </table>
-</div>
+
 
 
 <div  id="mid-bg">

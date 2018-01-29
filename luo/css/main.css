@@ -51,12 +51,30 @@ html,body
 }
 .mid-center
 {
-    position:absolute;
-    left: 50%;
-    margin-left: -590px;
+    position:relative;
     height:172px;
     width:1180px;
     background:#F3F3F3;
+    margin:  0 auto;
+}
+.mid-center:before , .mid-center:after
+{
+    content:"";
+    width: 10px;
+    height: 32px;
+    bottom: 0;
+    position: absolute;
+    background: url("../imgs/manage/tril2.png");
+}
+
+.mid-center:before
+{
+    left:-10px;
+}
+.mid-center:after
+{
+    right:-10px;
+    background-position: 0 -32px;
 }
 
 .mid-center  a
@@ -64,17 +82,35 @@ html,body
     float:left;
     color:#46B5F6;
     padding-left:100px;
+    padding-top:16px;
 }
 
 .mid
 {
     display:block;
-    padding-top:16px;
+    height: 80px;
+    width: 80px;
+}
+.mid.ma
+{
+    background: url("../imgs/manage/manage1.png");
+}
+a.active .mid.ma
+{
+    background: url("../imgs/manage/manage2.png");
+}
+.mid.us
+{
+    background: url("../imgs/manage/user1.png");
+}
+a.active .mid.us
+{
+    background: url("../imgs/manage/user2.png");
 }
 
 #main
 {
-    z-index: 1;
+    z-index: 15;
     position:absolute;
     top:200px;
     bottom:0;
@@ -82,35 +118,16 @@ html,body
     margin-left: -590px;
     width:1180px;
     background: #FFFFFF;
+    overflow: hidden;
 }
 
 
 .main-head
 {
-    margin-top:50px;
     margin-left:20px;
     margin-right:20px;
 }
 
-#main:before , #main:after
-{
-    content:"";
-    width: 10px;
-    height: 32px;
-    top: 0;
-    position: absolute;
-    background: url("../imgs/manage/tril2.png");
-}
-
-#main:before
-{
-    left:-10px;
-}
-#main:after
-{
-    right:-10px;
-    background-position: 0 -32px;
-}
 
 .btn
 {
@@ -201,16 +218,25 @@ thead tr th a,tbody tr td a
     color:#116CB3;
 }
 
-#mid-bg,#mid-pbg
-{
+#mid-bg
+  {
     position:absolute;
-    z-index: 1;
+    z-index: 2;
     top:0;
     bottom:0;
     height:100%;  /*  想让一个元素的百分比高度height:100%起作用，需要给这个元素的所有父元素的高度设定一个有效值 */
     width:100%;
-    opacity: 0.4;
-    background: #000;
+    background: rgba(0,0,0,0.5);
+}
+
+#mid-pbg
+{
+    position:fixed;
+    height:100%;
+    width:100%;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.5);
 }
 
 /*  属于其父元素的第2n个子元素的每个tr的背景色
@@ -264,11 +290,13 @@ tr:nth-child(2n) ,th
 #new
 {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     left:50%;
     width: 1000px;
     height:630px;
     margin-left: -500px;
+    top: 50%;
+    margin-top: -350px;
 }
 
 .new-header
